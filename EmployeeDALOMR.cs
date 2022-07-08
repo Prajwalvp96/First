@@ -12,7 +12,7 @@ namespace OMRWebApp.DAL
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class EmployeeDALOMR: DbContext
     {
-        public DbSet<EmployeeBOL> emp { get; set; }
+        public DbSet<EmployeeBOL> emp { get; set; }//Prajwal Patil 
         public EmployeeDALOMR() : base("WebDataCon")
         {
         }
