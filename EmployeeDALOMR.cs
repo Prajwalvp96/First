@@ -6,7 +6,7 @@ using System.Web;
 using OMRWebApp.Models;
 using System.Data.Entity;
 using MySql.Data.EntityFramework;
-
+//ORM Entity Framework EmpDAL lib
 namespace OMRWebApp.DAL
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
