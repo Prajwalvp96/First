@@ -1,0 +1,88 @@
+public class abc
+{
+	public static void main(String [] args)
+	{
+		List<Integr> li = new ArrayList<>();
+		li.add(1);
+		li.add(2);
+		li.add(3);
+		li.add(2);
+		li.add(4);
+		li.add(5);
+		li.add(1);
+		
+	}
+	public static void removeduplicate(List<Integer> li)
+	{
+		for(int i = 0; i < li.size() - 1 ; i++)
+		{
+			for(int j = i+1 ; j < li.size() ; j++)
+			{
+				if(li.get(i) == li.get(j))
+				{
+					li.remove(j);
+				}
+			}
+		}
+
+		for(int i = 0 ; i < li.size() ; i++)
+		{
+			
+		}	
+	}
+
+	public static void sortidwise(List<Employee> li)
+	{
+		int i,j;
+		Employee key;
+		for(int i = 0 ; i < li.size() ; i++)
+		{
+			j = i-1;
+			key = li.get(i);
+			
+			while( j >= 0 && key.getEmpid() < li.get(j).getEmpid() )
+			{
+				li.add(j+1,li.get(j));
+				j--;
+			}
+			li.add(j+1,key);
+		}
+	}
+}
+
+
+
+empid ename sal
+
+select sal
+from emp
+group by sal
+orer by 
+desc sal
+limit (1,1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
